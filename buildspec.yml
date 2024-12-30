@@ -10,7 +10,7 @@ phases:
     commands:
       - echo 'Installing Elixir dependencies'
       - sudo apt update
-      - sudo apt install elixir
+      - sudo DEBIAN_FRONTEND=noninteractive apt install -y elixir
       - elixir --version
       - mix --version
   pre_build:
